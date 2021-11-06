@@ -1,6 +1,6 @@
 ﻿# CalendarReactProject
 
-[App available here](react-calendar-project-by-vladimir.netlify.app)
+[App available here](https://react-calendar-project-by-vladimir.netlify.app)
 
 The tech stack is:
 
