@@ -12,7 +12,7 @@ const Day = ({ dataDay, dayEvents, removeEvent }) => {
   const isToday = dataDay === new Date().getDate();
   return (
     <div className="calendar__day" data-day={dataDay}>
-      {isToday ? <TodayLine /> : null}
+      {isToday && <TodayLine />}
       {hours.map(hour => {
         const hourEvents = dayEvents.filter(event => event.dateFrom.getHours() === hour);
 
