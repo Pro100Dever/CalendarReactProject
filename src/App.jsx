@@ -26,14 +26,8 @@ const App = () => {
     setWeekStartDate(new Date());
   };
 
-  const toggleModal = e => {
-    const { target } = e;
-    if (
-      target.classList.contains('create-event__close-btn') ||
-      target.classList.contains('create-event-btn')
-    ) {
+  const toggleModal = () => {
       setIsShowModal(!isShowModal);
-    }
   };
 
   const getEvents = () =>

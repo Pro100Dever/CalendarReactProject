@@ -25,7 +25,7 @@ const Modal = ({ onCreateEvent, closeModal }) => {
   };
 
   return (
-    <div className="modal overlay" onClick={closeModal}>
+    <div className="modal overlay" >
       <div className="modal__content">
         <div className="create-event">
           <button className="create-event__close-btn" onClick={closeModal}>

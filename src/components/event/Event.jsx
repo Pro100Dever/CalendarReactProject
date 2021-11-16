@@ -1,7 +1,6 @@
-import React,{useState} from "react";
+import React, { useState } from 'react';
 
-import "./event.scss";
-import EventDeleteModal from "./EventDeleteModal.jsx";
+import './event.scss';
 
 const Event = ({ height, marginTop, title, time, id, removeEvent }) => {
   const eventStyle = {
@@ -17,7 +16,11 @@ const Event = ({ height, marginTop, title, time, id, removeEvent }) => {
     <div style={eventStyle} className="event" onClick={toggleModal}>
       <div className="event__title">{title}</div>
       <div className="event__time">{time}</div>
-      {isShowModal && <EventDeleteModal removeEvent={removeEvent} id={id} />}
+      {isShowModal && (
+        <button className="delete-event-btn" onClick={() => removeEvent(id)}>
+          Delete
+        </button>
+      )}
     </div>
   );
 };
