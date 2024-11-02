@@ -13,4 +13,4 @@ The tech stack is:
 - React
 - Moment js
 
-created by [Berestenko Vladimir](https://t.me/dokktegund)
+created by - Volodymyr Berestenko (Pro100Dever)
